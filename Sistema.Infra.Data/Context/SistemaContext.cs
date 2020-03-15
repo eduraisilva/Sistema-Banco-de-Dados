@@ -15,21 +15,23 @@ namespace Sistema.Infra.Data.Context
         public DbSet<Item_Pedido> Itens_Pedido { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Produto> Produtos { get; set; }
-               
-    }
-    public SistemaContext(DbContextOptions options) : base(options)
-    {
+
+        public SistemaContext(DbContextOptions options) : base(options)
+        {
+
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new ClienteConfiguration());
+            modelBuilder.ApplyConfiguration(new EstoqueConfiguration());
+            modelBuilder.ApplyConfiguration(new Item_PedidoConfiguration());
+            modelBuilder.ApplyConfiguration(new PedidoConfiguration());
+            modelBuilder.ApplyConfiguration(new ProdutoConfiguration());
+
+            base.OnModelCreating(modelBuilder);
+        }
 
     }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.ApplyConfiguration(new ClienteConfiguration());
-        modelBuilder.ApplyConfiguration(new EstoqueConfiguration());
-        modelBuilder.ApplyConfiguration(new Item_PedidoConfiguration());
-        modelBuilder.ApplyConfiguration(new PedidoConfiguration());
-        modelBuilder.ApplyConfiguration(new ProdutoConfiguration());
-        
-        base.OnModelCreating(modelBuilder);
-    }
+   
 
 }

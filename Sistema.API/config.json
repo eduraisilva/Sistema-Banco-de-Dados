@@ -1,5 +1,5 @@
 {
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=_CHANGE_ME;Trusted_Connection=True;MultipleActiveResultSets=true"
-  }
+    "ConnectionStrings": {
+        "SistemaDB": "server=localhost;userid=root;password=admin123;database=SistemaDB"
+    }
 }
