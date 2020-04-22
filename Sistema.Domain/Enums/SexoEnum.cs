@@ -6,7 +6,7 @@ namespace Sistema.Domain.Enums
 {
     public enum SexoEnum
     {
-        NaoDefiido = 1,
+        NaoDefinido = 1,
         Feminimo = 2,
         Masculino = 3
     }

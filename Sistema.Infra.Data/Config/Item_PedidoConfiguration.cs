@@ -13,7 +13,8 @@ namespace Sistema.Infra.Data.Config
         {
             //chave primária
             builder.HasKey(u => u.Pedido_Id);
-            builder.HasKey(u => u.Produto_Id);
+
+            builder.Property(u => u.Produto_Id).IsRequired();
             builder.Property(u => u.ItemPed_Nome).HasMaxLength(400).IsRequired();
             builder.Property(u => u.ItemPed_QTDE).HasMaxLength(400).IsRequired();
             builder.Property(u => u.ItemPed_Valor).IsRequired();
