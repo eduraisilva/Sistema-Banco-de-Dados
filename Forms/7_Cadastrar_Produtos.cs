@@ -1,13 +1,6 @@
-﻿using Forms.FormProdutos;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Forms
@@ -193,7 +186,7 @@ namespace Forms
 
         private void ButtonUpdate_Click(object sender, EventArgs e)
         {
-            //MySqlCommand command = new MySqlCommand();
+            
             try
             {
                 string Produto_Id = dataGridView_cadastro_produto.CurrentRow.Cells[0].Value.ToString();
@@ -225,8 +218,7 @@ namespace Forms
 
         private void TextBoxProdutoValor_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-             //double valor = Double.Parse(TextBoxProdutoValor.Text);
-             //TextBoxProdutoValor.Text = valor.ToString("C");
+             
         }
         
         private void TextBoxProdutoValor_TextChanged(object sender, EventArgs e)

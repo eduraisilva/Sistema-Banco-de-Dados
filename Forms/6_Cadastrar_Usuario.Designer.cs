@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_6_Cadastrar_Usuario));
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonInsert = new System.Windows.Forms.Button();
@@ -65,7 +65,9 @@
             this.buttonEstoque = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_usuarios)).BeginInit();
+            this.panel2.SuspendLayout();
             this.Barra_Título.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -79,22 +81,23 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(300, 490);
+            this.buttonDelete.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelete.Location = new System.Drawing.Point(204, 251);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(63, 25);
+            this.buttonDelete.Size = new System.Drawing.Size(81, 25);
             this.buttonDelete.TabIndex = 41;
-            this.buttonDelete.Text = "DELETE";
+            this.buttonDelete.Text = "DELETAR";
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
             // buttonInsert
             // 
-            this.buttonInsert.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInsert.Location = new System.Drawing.Point(987, 277);
+            this.buttonInsert.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInsert.Location = new System.Drawing.Point(119, 251);
             this.buttonInsert.Name = "buttonInsert";
-            this.buttonInsert.Size = new System.Drawing.Size(63, 25);
+            this.buttonInsert.Size = new System.Drawing.Size(81, 25);
             this.buttonInsert.TabIndex = 40;
-            this.buttonInsert.Text = "INSERT";
+            this.buttonInsert.Text = "INSERIR";
             this.buttonInsert.UseVisualStyleBackColor = true;
             this.buttonInsert.Click += new System.EventHandler(this.ButtonInsert_Click);
             // 
@@ -105,26 +108,26 @@
             this.dataGridView_usuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.dataGridView_usuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_usuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_usuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_usuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView_usuarios.ColumnHeadersHeight = 26;
             this.dataGridView_usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_usuarios.EnableHeadersVisualStyles = false;
             this.dataGridView_usuarios.GridColor = System.Drawing.Color.DarkSlateGray;
-            this.dataGridView_usuarios.Location = new System.Drawing.Point(173, 48);
+            this.dataGridView_usuarios.Location = new System.Drawing.Point(175, 121);
             this.dataGridView_usuarios.Name = "dataGridView_usuarios";
             this.dataGridView_usuarios.RowHeadersVisible = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumAquamarine;
-            this.dataGridView_usuarios.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.MediumAquamarine;
+            this.dataGridView_usuarios.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView_usuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_usuarios.Size = new System.Drawing.Size(624, 436);
             this.dataGridView_usuarios.TabIndex = 39;
@@ -254,6 +257,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.buttonDelete);
+            this.panel2.Controls.Add(this.buttonInsert);
             this.panel2.Location = new System.Drawing.Point(818, 26);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(381, 603);
@@ -500,17 +505,27 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.label3.Location = new System.Drawing.Point(174, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 15);
+            this.label3.TabIndex = 47;
+            this.label3.Text = "Lista de Usuarios:";
+            // 
             // _6_Cadastrar_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1201, 630);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Barra_Título);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.buttonDelete);
-            this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.dataGridView_usuarios);
             this.Controls.Add(this.rbFeminino);
             this.Controls.Add(this.rbMasculino);
@@ -532,6 +547,7 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this._6_Cadastrar_Usuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_usuarios)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.Barra_Título.ResumeLayout(false);
             this.Barra_Título.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -583,5 +599,6 @@
         private System.Windows.Forms.Button buttonEstoque;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label3;
     }
 }

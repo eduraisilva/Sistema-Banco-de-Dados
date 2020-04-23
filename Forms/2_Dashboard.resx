@@ -324,6 +324,18 @@
         AABJRU5ErkJggg==
 </value>
   </data>
+  <data name="pictureBox6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAXFJREFUSEvtUztOw0AQjSjgAkS0SKHNFShyCKoI0gBHoKGI0sAhgBohkQqlgiiA
+        BAdAkTgDyn48u8nuujEzeBAfx4kTEAXKk568fn7zZjXrLf05tPJtrVxvPvo2x+SDjPQ0JmwBhI4B35vE
+        Nw96P9dOBJmsDVUDcddau8ZyLsiTekO1eAOIdwDiXZamgrw2ircLN8CCBpGlqXj3LxrkYuYGNgp1LJjx
+        kEO9cANjkrKB8Gii0EI2p7BFXoBktVgD6Z6Vcg0p/T5eoiOt/fEkkoe8VKOUf+KY8dADV5PCdVLzHJTu
+        Cp+bHPcVSZKsYPiDMabM0sygWsy4x6xllj6gBu5QCJd7sNFLtCGEvSZqrSssZ4Dj2pNydMCvKXCWFSld
+        FzsvsZSBEMNLJewJkdYsZ0AZuNEbHNU6S7h75e6U8Bf4oZnP4ZkUo3Mirk/He1JSFmbecjzNzve//x0/
+        JYDvczw1cDUAh7fx90iZHL/A/0ap9ArOY86BDJPaGQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="pictureBox7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

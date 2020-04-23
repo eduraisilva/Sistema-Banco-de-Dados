@@ -60,6 +60,7 @@
             this.buttonEstoque = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_produtos)).BeginInit();
             this.panel2.SuspendLayout();
             this.Barra_Título.SuspendLayout();
@@ -145,7 +146,7 @@
             this.dataGridView_produtos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_produtos.EnableHeadersVisualStyles = false;
             this.dataGridView_produtos.GridColor = System.Drawing.Color.DarkSlateGray;
-            this.dataGridView_produtos.Location = new System.Drawing.Point(216, 101);
+            this.dataGridView_produtos.Location = new System.Drawing.Point(173, 127);
             this.dataGridView_produtos.Name = "dataGridView_produtos";
             this.dataGridView_produtos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -168,10 +169,10 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(67, 147);
+            this.button1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(153, 147);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 32);
+            this.button1.Size = new System.Drawing.Size(111, 32);
             this.button1.TabIndex = 12;
             this.button1.Text = "Repor Estoque";
             this.button1.UseVisualStyleBackColor = true;
@@ -267,7 +268,7 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(167, 591);
+            this.panel1.Size = new System.Drawing.Size(167, 602);
             this.panel1.TabIndex = 24;
             // 
             // pictureBox6
@@ -432,12 +433,24 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.label4.Location = new System.Drawing.Point(174, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 15);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Lista de Produtos:";
+            // 
             // _4_Estoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1201, 630);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Barra_Título);
             this.Controls.Add(this.dataGridView_produtos);
@@ -463,6 +476,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -494,5 +508,6 @@
         private System.Windows.Forms.Button buttonEstoque;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_5_Vendas));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -44,7 +43,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxIdQuantidade = new System.Windows.Forms.TextBox();
             this.textBoxIdProduto = new System.Windows.Forms.TextBox();
-            this.dataGridViewVendas = new System.Windows.Forms.DataGridView();
+            this.dataGridViewPedidos = new System.Windows.Forms.DataGridView();
             this.textBoxValorProduto = new System.Windows.Forms.TextBox();
             this.lblValorProduto = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -69,8 +68,8 @@
             this.buttonEstoque = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVendas)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).BeginInit();
             this.panel2.SuspendLayout();
             this.Barra_Título.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -133,12 +132,12 @@
             // 
             // buttonEfetuarCompra
             // 
-            this.buttonEfetuarCompra.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEfetuarCompra.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEfetuarCompra.Image = ((System.Drawing.Image)(resources.GetObject("buttonEfetuarCompra.Image")));
             this.buttonEfetuarCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEfetuarCompra.Location = new System.Drawing.Point(152, 342);
+            this.buttonEfetuarCompra.Location = new System.Drawing.Point(165, 342);
             this.buttonEfetuarCompra.Name = "buttonEfetuarCompra";
-            this.buttonEfetuarCompra.Size = new System.Drawing.Size(127, 36);
+            this.buttonEfetuarCompra.Size = new System.Drawing.Size(117, 36);
             this.buttonEfetuarCompra.TabIndex = 12;
             this.buttonEfetuarCompra.Text = "Efetuar Compra";
             this.buttonEfetuarCompra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -185,13 +184,13 @@
             this.textBoxIdProduto.TabIndex = 16;
             this.textBoxIdProduto.TextChanged += new System.EventHandler(this.TextBoxIdProduto_TextChanged);
             // 
-            // dataGridViewVendas
+            // dataGridViewPedidos
             // 
-            this.dataGridViewVendas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridViewVendas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridViewVendas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.dataGridViewVendas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewVendas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewPedidos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridViewPedidos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.dataGridViewPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewPedidos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -199,9 +198,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewVendas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewVendas.ColumnHeadersHeight = 26;
-            this.dataGridViewVendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridViewPedidos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewPedidos.ColumnHeadersHeight = 26;
+            this.dataGridViewPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -209,12 +208,12 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewVendas.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewVendas.EnableHeadersVisualStyles = false;
-            this.dataGridViewVendas.GridColor = System.Drawing.Color.DarkSlateGray;
-            this.dataGridViewVendas.Location = new System.Drawing.Point(195, 53);
-            this.dataGridViewVendas.Name = "dataGridViewVendas";
-            this.dataGridViewVendas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridViewPedidos.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewPedidos.EnableHeadersVisualStyles = false;
+            this.dataGridViewPedidos.GridColor = System.Drawing.Color.DarkSlateGray;
+            this.dataGridViewPedidos.Location = new System.Drawing.Point(175, 121);
+            this.dataGridViewPedidos.Name = "dataGridViewPedidos";
+            this.dataGridViewPedidos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -222,17 +221,17 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MediumAquamarine;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewVendas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewVendas.RowHeadersVisible = false;
+            this.dataGridViewPedidos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewPedidos.RowHeadersVisible = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MediumAquamarine;
-            this.dataGridViewVendas.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewVendas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewVendas.Size = new System.Drawing.Size(668, 464);
-            this.dataGridViewVendas.TabIndex = 17;
-            this.dataGridViewVendas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
+            this.dataGridViewPedidos.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewPedidos.Size = new System.Drawing.Size(668, 464);
+            this.dataGridViewPedidos.TabIndex = 17;
+            this.dataGridViewPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // textBoxValorProduto
             // 
@@ -269,13 +268,13 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(152, 388);
+            this.button4.Location = new System.Drawing.Point(165, 389);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(127, 30);
+            this.button4.Size = new System.Drawing.Size(81, 25);
             this.button4.TabIndex = 15;
-            this.button4.Text = "Limpar";
+            this.button4.Text = "LIMPAR";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
@@ -540,10 +539,16 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // timer1
+            // label2
             // 
-            this.timer1.Interval = 1;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.label2.Location = new System.Drawing.Point(174, 97);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 15);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Lista de Pedidos:";
             // 
             // _5_Vendas
             // 
@@ -551,11 +556,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1201, 630);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Barra_Título);
             this.Controls.Add(this.textBoxValorProduto);
             this.Controls.Add(this.lblValorProduto);
-            this.Controls.Add(this.dataGridViewVendas);
+            this.Controls.Add(this.dataGridViewPedidos);
             this.Controls.Add(this.textBoxIdProduto);
             this.Controls.Add(this.textBoxIdQuantidade);
             this.Controls.Add(this.label5);
@@ -569,12 +575,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "_5_Vendas";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "_4___Vendas";
             this.TopMost = true;
             this.Load += new System.EventHandler(this._5_Vendas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVendas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.Barra_Título.ResumeLayout(false);
@@ -603,7 +608,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxIdQuantidade;
         private System.Windows.Forms.TextBox textBoxIdProduto;
-        private System.Windows.Forms.DataGridView dataGridViewVendas;
+        private System.Windows.Forms.DataGridView dataGridViewPedidos;
         private System.Windows.Forms.TextBox textBoxValorProduto;
         private System.Windows.Forms.Label lblValorProduto;
         private System.Windows.Forms.Panel panel2;
@@ -625,9 +630,9 @@
         private System.Windows.Forms.Button buttonEstoque;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBoxProduto;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label2;
     }
 }

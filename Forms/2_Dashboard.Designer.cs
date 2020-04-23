@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_2_Dashboard));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.buttonDashboard = new System.Windows.Forms.Button();
             this.buttonEstoque = new System.Windows.Forms.Button();
             this.buttonCadastrarCliente = new System.Windows.Forms.Button();
@@ -81,6 +81,8 @@
             this.lbl_faturamento_bruto = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Produto_Estoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_QtdeProdutosVendidos)).BeginInit();
@@ -103,6 +105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonDashboard
@@ -183,7 +186,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(5, 386);
+            this.button2.Location = new System.Drawing.Point(6, 392);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 39);
             this.button2.TabIndex = 9;
@@ -212,116 +215,116 @@
             // 
             this.chart_Produto_Estoque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.chart_Produto_Estoque.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            chartArea1.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.None;
-            chartArea1.AxisX.InterlacedColor = System.Drawing.Color.Black;
-            chartArea1.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea1.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea1.AxisX2.InterlacedColor = System.Drawing.Color.White;
-            chartArea1.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea1.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            chartArea1.BorderColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chart_Produto_Estoque.ChartAreas.Add(chartArea1);
+            chartArea5.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.None;
+            chartArea5.AxisX.InterlacedColor = System.Drawing.Color.Black;
+            chartArea5.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea5.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea5.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea5.AxisX.TitleFont = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea5.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea5.AxisX2.InterlacedColor = System.Drawing.Color.White;
+            chartArea5.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea5.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
+            chartArea5.AxisY.LineColor = System.Drawing.Color.Transparent;
+            chartArea5.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea5.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea5.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea5.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            chartArea5.BorderColor = System.Drawing.Color.Transparent;
+            chartArea5.Name = "ChartArea1";
+            this.chart_Produto_Estoque.ChartAreas.Add(chartArea5);
             this.chart_Produto_Estoque.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            legend1.Alignment = System.Drawing.StringAlignment.Far;
-            legend1.BackColor = System.Drawing.Color.Transparent;
-            legend1.Enabled = false;
-            legend1.Name = "Legend1";
-            this.chart_Produto_Estoque.Legends.Add(legend1);
+            legend5.Alignment = System.Drawing.StringAlignment.Far;
+            legend5.BackColor = System.Drawing.Color.Transparent;
+            legend5.Enabled = false;
+            legend5.Name = "Legend1";
+            this.chart_Produto_Estoque.Legends.Add(legend5);
             this.chart_Produto_Estoque.Location = new System.Drawing.Point(166, 31);
             this.chart_Produto_Estoque.Name = "chart_Produto_Estoque";
             this.chart_Produto_Estoque.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             this.chart_Produto_Estoque.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series1.BackSecondaryColor = System.Drawing.Color.White;
-            series1.BorderColor = System.Drawing.Color.Transparent;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series1.Color = System.Drawing.Color.DarkSlateGray;
-            series1.IsValueShownAsLabel = true;
-            series1.LabelBackColor = System.Drawing.Color.Transparent;
-            series1.LabelBorderColor = System.Drawing.Color.Transparent;
-            series1.LabelForeColor = System.Drawing.Color.White;
-            series1.Legend = "Legend1";
-            series1.LegendText = "Estoque";
-            series1.Name = "Series1";
-            series1.ShadowColor = System.Drawing.Color.Black;
-            this.chart_Produto_Estoque.Series.Add(series1);
+            series5.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
+            series5.BackSecondaryColor = System.Drawing.Color.White;
+            series5.BorderColor = System.Drawing.Color.Transparent;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series5.Color = System.Drawing.Color.DarkSlateGray;
+            series5.IsValueShownAsLabel = true;
+            series5.LabelBackColor = System.Drawing.Color.Transparent;
+            series5.LabelBorderColor = System.Drawing.Color.Transparent;
+            series5.LabelForeColor = System.Drawing.Color.White;
+            series5.Legend = "Legend1";
+            series5.LegendText = "Estoque";
+            series5.Name = "Series1";
+            series5.ShadowColor = System.Drawing.Color.Black;
+            this.chart_Produto_Estoque.Series.Add(series5);
             this.chart_Produto_Estoque.Size = new System.Drawing.Size(410, 593);
             this.chart_Produto_Estoque.TabIndex = 13;
             this.chart_Produto_Estoque.Text = "chart1";
-            title1.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title1.BackColor = System.Drawing.Color.Transparent;
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.ForeColor = System.Drawing.Color.White;
-            title1.Name = "Title1";
-            title1.Text = "Estoque";
-            this.chart_Produto_Estoque.Titles.Add(title1);
+            title5.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title5.BackColor = System.Drawing.Color.Transparent;
+            title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title5.ForeColor = System.Drawing.Color.White;
+            title5.Name = "Title1";
+            title5.Text = "Estoque";
+            this.chart_Produto_Estoque.Titles.Add(title5);
             // 
             // chart_QtdeProdutosVendidos
             // 
             this.chart_QtdeProdutosVendidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            chartArea2.AxisX.IsLabelAutoFit = false;
-            chartArea2.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea2.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.TitleFont = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea2.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea2.AxisX2.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX2.TitleForeColor = System.Drawing.Color.White;
-            chartArea2.AxisY.IsLabelAutoFit = false;
-            chartArea2.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea2.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY.MajorTickMark.Enabled = false;
-            chartArea2.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY.TitleFont = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea2.AxisY2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY2.TitleForeColor = System.Drawing.Color.White;
-            chartArea2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            chartArea2.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea2.Name = "ChartArea1";
-            this.chart_QtdeProdutosVendidos.ChartAreas.Add(chartArea2);
-            legend2.Enabled = false;
-            legend2.Name = "Legend1";
-            this.chart_QtdeProdutosVendidos.Legends.Add(legend2);
+            chartArea6.AxisX.IsLabelAutoFit = false;
+            chartArea6.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea6.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea6.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea6.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.TitleFont = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea6.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea6.AxisX2.LineColor = System.Drawing.Color.Transparent;
+            chartArea6.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea6.AxisX2.TitleForeColor = System.Drawing.Color.White;
+            chartArea6.AxisY.IsLabelAutoFit = false;
+            chartArea6.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            chartArea6.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea6.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea6.AxisY.MajorTickMark.Enabled = false;
+            chartArea6.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea6.AxisY.TitleFont = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea6.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea6.AxisY2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea6.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY2.TitleForeColor = System.Drawing.Color.White;
+            chartArea6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            chartArea6.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea6.Name = "ChartArea1";
+            this.chart_QtdeProdutosVendidos.ChartAreas.Add(chartArea6);
+            legend6.Enabled = false;
+            legend6.Name = "Legend1";
+            this.chart_QtdeProdutosVendidos.Legends.Add(legend6);
             this.chart_QtdeProdutosVendidos.Location = new System.Drawing.Point(586, 296);
             this.chart_QtdeProdutosVendidos.Name = "chart_QtdeProdutosVendidos";
-            series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
-            series2.ChartArea = "ChartArea1";
-            series2.IsValueShownAsLabel = true;
-            series2.LabelForeColor = System.Drawing.Color.White;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            series2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.chart_QtdeProdutosVendidos.Series.Add(series2);
+            series6.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
+            series6.ChartArea = "ChartArea1";
+            series6.IsValueShownAsLabel = true;
+            series6.LabelForeColor = System.Drawing.Color.White;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            series6.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.chart_QtdeProdutosVendidos.Series.Add(series6);
             this.chart_QtdeProdutosVendidos.Size = new System.Drawing.Size(615, 328);
             this.chart_QtdeProdutosVendidos.TabIndex = 14;
             this.chart_QtdeProdutosVendidos.Text = "chart1";
-            title2.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
-            title2.BackColor = System.Drawing.Color.Transparent;
-            title2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.ForeColor = System.Drawing.Color.White;
-            title2.Name = "Title1";
-            title2.Text = "Produtos Vendidos - Quantidade";
-            this.chart_QtdeProdutosVendidos.Titles.Add(title2);
+            title6.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
+            title6.BackColor = System.Drawing.Color.Transparent;
+            title6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title6.ForeColor = System.Drawing.Color.White;
+            title6.Name = "Title1";
+            title6.Text = "Produtos Vendidos - Quantidade";
+            this.chart_QtdeProdutosVendidos.Titles.Add(title6);
             // 
             // pictureBox4
             // 
@@ -383,6 +386,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox9);
@@ -394,6 +398,7 @@
             this.panel1.Controls.Add(this.buttonEstoque);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(167, 591);
@@ -685,6 +690,31 @@
             this.pictureBox19.TabIndex = 36;
             this.pictureBox19.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox6.Location = new System.Drawing.Point(11, 386);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(32, 47);
+            this.pictureBox6.TabIndex = 26;
+            this.pictureBox6.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(0, 297);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(148, 39);
+            this.button4.TabIndex = 27;
+            this.button4.Text = "Vendas";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
             // _2_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -750,6 +780,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -799,5 +830,7 @@
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -1,15 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Forms
@@ -23,7 +15,7 @@ namespace Forms
 
         MySqlConnection objeto_connection = new MySqlConnection("server=localhost;userid=root;password=admin123;database=SistemaDB");
         MySqlCommand command;
-        MySqlDataReader dr;
+        MySqlDataReader Registro_Query;
 
 
         public _2_Dashboard()
@@ -58,7 +50,7 @@ namespace Forms
             dash_faturamento_bruto_A();
             dash_qtde_vendas_B();
             dash_qtde_cliente_C();
-            dash_qtde_clientes_compras_D();
+            dash_qtde_clientes_ativos_D();
             dash_qtde_usuarios_E();
             dash_qtde_produtos_F();
 
@@ -96,7 +88,6 @@ namespace Forms
         {
             timer1.Stop();
 
-            
         }
 
         private void Chart1_Produto_Estoque_Click(object sender, EventArgs e)
@@ -111,14 +102,14 @@ namespace Forms
             command = new MySqlCommand("Chart_ProdutoEstoque", objeto_connection);
             command.CommandType = CommandType.StoredProcedure;
             objeto_connection.Open();
-            dr = command.ExecuteReader();
-            while (dr.Read())
+            Registro_Query = command.ExecuteReader();
+            while (Registro_Query.Read())
             {
-                Produto.Add(dr.GetString(0));
-                Qtde_Produto.Add(dr.GetInt32(1));
+                Produto.Add(Registro_Query.GetString(0));
+                Qtde_Produto.Add(Registro_Query.GetInt32(1));
             }
             chart_Produto_Estoque.Series[0].Points.DataBindXY(Produto, Qtde_Produto);
-            dr.Close();
+            Registro_Query.Close();
             objeto_connection.Close();
         }
 
@@ -130,14 +121,14 @@ namespace Forms
             command = new MySqlCommand("Chart_Produtos_Vendidos", objeto_connection);
             command.CommandType = CommandType.StoredProcedure;
             objeto_connection.Open();
-            dr = command.ExecuteReader();
-            while (dr.Read())
+            Registro_Query = command.ExecuteReader();
+            while (Registro_Query.Read())
             {
-                Produtos_Vendidos.Add(dr.GetString(0));
-                Qtde_Vendidas.Add(dr.GetInt32(1));
+                Produtos_Vendidos.Add(Registro_Query.GetString(0));
+                Qtde_Vendidas.Add(Registro_Query.GetInt32(1));
             }
             chart_QtdeProdutosVendidos.Series[0].Points.DataBindXY(Produtos_Vendidos, Qtde_Vendidas);
-            dr.Close();
+            Registro_Query.Close();
             objeto_connection.Close();
         }
 
@@ -155,7 +146,7 @@ namespace Forms
         private void dash_faturamento_bruto_A()
         {
             objeto_connection.Open();
-            MySqlCommand command = new MySqlCommand("select sum(Valor_Total_Compra) from pedidos", objeto_connection);
+            MySqlCommand command = new MySqlCommand("select sum(REPLACE(Valor_Total_Compra, ',', '.')) from pedidos", objeto_connection);
 
             command.CommandType = CommandType.Text;
 
@@ -166,7 +157,7 @@ namespace Forms
 
             lbl_faturamento_bruto.Text = Registro_Query.GetString(0);
 
-            double valor = Double.Parse(lbl_faturamento_bruto.Text);
+            decimal valor = Decimal.Parse(lbl_faturamento_bruto.Text);
             lbl_faturamento_bruto.Text = valor.ToString("C");
                            
             objeto_connection.Close();
@@ -202,10 +193,10 @@ namespace Forms
 
             objeto_connection.Close();
         }
-        private void dash_qtde_clientes_compras_D()
+        private void dash_qtde_clientes_ativos_D()
         {
             objeto_connection.Open();
-            MySqlCommand command = new MySqlCommand("select count(*) from clientes inner join pedidos on clientes.Cliente_Id = pedidos.Cliente_Id", objeto_connection);
+            MySqlCommand command = new MySqlCommand("select count(DISTINCT clientes.Cliente_Id) from clientes inner join pedidos on clientes.Cliente_Id = pedidos.Cliente_Id", objeto_connection);
 
             command.CommandType = CommandType.Text;
 
@@ -260,8 +251,7 @@ namespace Forms
 
         private void PictureBox23_Click(object sender, EventArgs e)
         {
-            //minimizar
-           
+                       
         }
 
         private void PictureBox24_Click(object sender, EventArgs e)
@@ -328,18 +318,11 @@ namespace Forms
             mov = 0;
         }
 
-
-
-
-
-
-        /*
-private void ButtonClientes_Click(object sender, EventArgs e)
-{
-_6_Clientes form_6 = new _6_Clientes();
-form_6.Show();
-this.Hide();
-}
-*/
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            _5_Vendas form = new _5_Vendas();
+            form.Show();
+            this.Hide();
+        }
     }
 }

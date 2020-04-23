@@ -1,13 +1,7 @@
 ﻿using Forms.FormData;
 using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -29,8 +23,7 @@ namespace Forms
         MySqlCommand command;
 
         SqlData obj = new SqlData();
-
-
+        
         public void tableclientes()
         {
             string selectQuery = "select * from clientes";
@@ -59,8 +52,7 @@ namespace Forms
 
         private void DataGridView_clientes_MouseClick(object sender, MouseEventArgs e)
         {
-            
-            
+                        
         }
 
         public void openConnection()
@@ -81,8 +73,7 @@ namespace Forms
 
         public void executeMyQuery(string query)
         {
-          
-                
+                          
                 try
                 {
                 openConnection();
@@ -140,13 +131,9 @@ namespace Forms
             command.CommandType = CommandType.Text;
             command.ExecuteNonQuery();
             objeto_connection.Close();
-
-
-
+                       
             MessageBox.Show("Query Executed");
-
-
-
+                       
             tableclientes();
         }
 
