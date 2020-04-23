@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonEntrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.cmbUsuarios = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -62,6 +62,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(129, 1);
             this.panel2.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Location = new System.Drawing.Point(-27, -9);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(159, 1);
+            this.panel1.TabIndex = 8;
             // 
             // textBoxPassword
             // 
@@ -135,14 +143,6 @@
             this.cmbUsuarios.TabIndex = 14;
             this.cmbUsuarios.SelectedIndexChanged += new System.EventHandler(this.CmbUsuarios_SelectedIndexChanged);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Location = new System.Drawing.Point(-27, -9);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(159, 1);
-            this.panel1.TabIndex = 8;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,6 +164,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

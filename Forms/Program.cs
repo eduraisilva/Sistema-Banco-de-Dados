@@ -16,7 +16,7 @@ namespace Forms
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new _2_Dashboard());
+            Application.Run(new Login());
             
         }
     }

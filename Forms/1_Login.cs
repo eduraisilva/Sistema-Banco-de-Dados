@@ -8,6 +8,10 @@ namespace Forms
 {
     public partial class Login : Form
     {
+        // Localizar área
+        int mov;
+        int movX;
+        int movY;
         public Login()
         {
             InitializeComponent();
@@ -46,7 +50,8 @@ namespace Forms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            this.Location = Screen.AllScreens[1].WorkingArea.Location;
+
             CarregarUsuarios();
         }
         private void CarregarUsuarios()
@@ -96,6 +101,26 @@ namespace Forms
         private void CmbUsuarios_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Login_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void Login_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void Login_MouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
         }
     }
 }
