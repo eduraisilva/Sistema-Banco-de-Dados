@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_Windows_Form", "5_Windows
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forms", "Forms\Forms.csproj", "{F2C8D98F-A7FB-4327-BC9C-1E226B3EA4B9}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Sistema de Vendas", "..\..\Software de Vendas\Sistema de Vendas\Sistema de Vendas.vdproj", "{78B82734-C67D-4A81-ACA7-61300588E881}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,8 @@ Global
 		{F2C8D98F-A7FB-4327-BC9C-1E226B3EA4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2C8D98F-A7FB-4327-BC9C-1E226B3EA4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2C8D98F-A7FB-4327-BC9C-1E226B3EA4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B82734-C67D-4A81-ACA7-61300588E881}.Debug|Any CPU.ActiveCfg = Debug
+		{78B82734-C67D-4A81-ACA7-61300588E881}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

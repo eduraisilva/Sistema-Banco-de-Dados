@@ -5,7 +5,7 @@ select * from pedidos;
 
 
 //Faturamento_Bruto
-select sum(Valor_Total_Compra) from pedidos
+select sum(REPLACE(Valor_Total_Compra, ',', '.')) from pedidos
 
 //Quantidades_Vendas
 select count(Pedido_Id) from pedidos
@@ -14,7 +14,7 @@ select count(Pedido_Id) from pedidos
 select count(Cliente_Id) from clientes
 
 //Qtde_Clientes_Compras
-select count(*) as total from clientes inner join pedidos on clientes.Cliente_Id = pedidos.Cliente_Id
+select count(DISTINCT clientes.Cliente_Id) as total from clientes inner join pedidos on clientes.Cliente_Id = pedidos.Cliente_Id
 
 //Qtde_Usuarios
 select count(Codigo) as Qtde from usuarios
